@@ -60,7 +60,7 @@ const userSchema = new Schema({
     return await bcrypt.compare(password,this.password)
  }
 
- userSchema.methods.generateAccessToken = async function (){
+ userSchema.methods.generateAccessToken = async function (){      // short lived mai expiry
     return jwt.sign({
         _id:this._id,
         email:this.email,
@@ -72,7 +72,7 @@ const userSchema = new Schema({
    }
 )
  }
- userSchema.methods.generateRefreshToken = async function (){
+ userSchema.methods.generateRefreshToken = async function (){        // long lived mai expiry
     return jwt.sign({
         _id:this._id,
         email:this.email,
