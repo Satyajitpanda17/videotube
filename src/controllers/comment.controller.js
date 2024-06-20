@@ -18,7 +18,7 @@ const getVideoComment = asyncHandler(async(req,res) => {
 
     const commentsAggregate = Comment.aggregate([
         {
-            $match : new mongoose.Types.inputId(videoId)
+            $match : new mongoose.Types.ObjectId.createFromHexString(videoId)
         },
         {
             $lookup : {
