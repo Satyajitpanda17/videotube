@@ -1,6 +1,10 @@
 import { Router } from "express";
 import { verifyJWt } from "../middlewares/auth_middleware.js";
 import {upload} from "../middlewares/multer_middleware.js";
+import { getVideoComments ,
+         addComment , 
+         deleteComment , 
+         updateComment } from "../controllers/comment.controller.js";
 
 const router = Router()
 

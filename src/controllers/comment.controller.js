@@ -5,7 +5,7 @@ import { asyncHandler } from "../utils/asynchandler.js";
 import { ApiError } from "../utils/apiError.js";
 import {ApiResponse} from "../utils/apiResponse.js";
 
-const getVideoComment = asyncHandler(async(req,res) => {
+const getVideoComments = asyncHandler(async(req,res) => {
 
     const {videoId} = req.params
     const {page=1 , limit=10} = req.query
@@ -189,7 +189,7 @@ const deleteComment = asyncHandler(async(req,res) => {
 
 export 
 {
-    getVideoComment,
+    getVideoComments,
     addComment,
     updateComment,
     deleteComment
