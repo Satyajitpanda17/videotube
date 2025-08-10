@@ -8,3 +8,6 @@ Learning backend development with Node.js, Express.js, MongoDB, and Cloudinary e
 # Link for the models of the project
 [Model Link](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj)
 
+## API Documentation
+[Click Here for Documentation](https://github.com/Satyajitpanda17/videotube_api)
+
